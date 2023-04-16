@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -89,10 +94,21 @@ _G.packer_plugins = {
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  kanagawa = {
+    config = { "\27LJ\2\n∆\1\0\0\a\0\15\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\a\0005\5\5\0005\6\4\0=\6\6\5=\5\b\4=\4\n\3=\3\v\2B\0\2\0016\0\f\0009\0\r\0'\2\14\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\vcolors\ntheme\1\0\0\ball\1\0\0\aui\1\0\0\1\0\1\14bg_gutter\tnone\1\0\1\16transparent\2\nsetup\rkanagawa\frequire\0" },
+    loaded = true,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/start/kanagawa",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -119,6 +135,12 @@ _G.packer_plugins = {
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -133,12 +155,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/jose/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -158,10 +174,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: kanagawa
+time([[Config for kanagawa]], true)
+try_loadstring("\27LJ\2\n∆\1\0\0\a\0\15\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\a\0005\5\5\0005\6\4\0=\6\6\5=\5\b\4=\4\n\3=\3\v\2B\0\2\0016\0\f\0009\0\r\0'\2\14\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\vcolors\ntheme\1\0\0\ball\1\0\0\aui\1\0\0\1\0\1\14bg_gutter\tnone\1\0\1\16transparent\2\nsetup\rkanagawa\frequire\0", "config", "kanagawa")
+time([[Config for kanagawa]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
