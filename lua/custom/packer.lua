@@ -1,5 +1,6 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
+
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -23,7 +24,7 @@ return require('packer').startup(function(use)
                     theme = {
                         all = {
                             ui = {
-                                bg_gutter = "none"
+                                -- bg_gutter = "none"
                             }
                         }
                     }
@@ -71,5 +72,14 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},     -- Required
         }
     }
+
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional
+        } 
+    }
+
+    use "lukas-reineke/indent-blankline.nvim"
 end)
 
